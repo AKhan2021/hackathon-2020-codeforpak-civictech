@@ -5,7 +5,7 @@ import { ServiceChargeRequest } from "./ServiceChargeRequest";
 import { ResponseCode } from "./ResponseCode";
 export interface ServiceCharge {
   request: ServiceChargeRequest;
-  response: ServiceChargeResponse;
+  response?: ServiceChargeResponse;
 }
 
 export const generateTestServiceCharges = (count: number): Array<ServiceCharge> => {
